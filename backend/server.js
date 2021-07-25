@@ -31,37 +31,6 @@ app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => res.send("hi i am host"));
 
-// Dummy Data Insertion Fn
-function addDumyData() {
-    let data = [
-        {
-            "name": "Manav",
-            "email": "zmanav.1999@gmail.com",
-        },
-        {
-            "name": "Ayush",
-            "email": "an431@gmail.com",
-        },
-        {
-            "name": "Sachin",
-            "email": "sac.9798@gmail.com",
-        },
-        {
-            "name": "Akshara",
-            "email": "ak47.12@gmail.com",
-        },
-        {
-            "name": "Siddharth",
-            "email": "siddhi15798@gmail.com",
-        },
-    ]
-    data.forEach((user) => {
-        Participants.create(user).then(user => {
-        
-        })
-    })
-}
-
 
 
 
